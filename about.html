@@ -20,7 +20,6 @@
     content="lol" />
   <meta name="author" content="CatGames" />
 
-  <script src="/analytics.js"></script>
   <script src="/tracking.js"></script>
   <script src="/main.js" defer></script>
   <style>
@@ -30,7 +29,15 @@
     }
   </style>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9SRQJXC2F8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-9SRQJXC2F8');
+</script>
 <body>
   <div id="navbar-container"></div>
   <div class="navbar-spacer" style="margin-top: 4vh !important;"></div>
